@@ -18,11 +18,11 @@ const Search = () => {
 
   const handleInput = (e) => {
         setValue(e.target.value)
-        let filter = filterResult(data, value)
-       if(value.length > 4) {
-        setData(filter)
-       }
-       console.log(filter)
+      //   let filter = filterResult(data, value)
+      //  if(value.length > 4) {
+      //   setData(filter)
+      //  }
+      //  console.log(filter)
   }
 
  
@@ -41,8 +41,8 @@ const Search = () => {
         setLoading(false)
       }
     }
-    if(value.length > 4) return
-    if(value.length === 4) {
+    // if(value.length > 4) return
+    if(value.length > 3) {
       getData()
     } 
   }, [value])
